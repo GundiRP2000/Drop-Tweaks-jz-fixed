@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "johns_drop_tweaks",
+  "version": "${version}",
+  "name": "Johnˈs Drop Tweaks",
+  "description": "Schützt ausgewählte Hotbar-Items vor dem Droppen. Mit animiertem GUI und mehreren Designs.",
+  "authors": [
+    "John"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.john.droptweaks.JohnsDropTweaksClient"
+    ],
+    "modmenu": [
+      "de.john.droptweaks.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "johns_drop_tweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
